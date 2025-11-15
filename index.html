@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Duck Life 1 - Wix Games</title>
+    <meta name="description" content="Play Duck Life 1 at Wix games - Train up a duckling then enter it in races!">
+    <meta name="keywords" content="web games, online games, unity, webgl, games, duck life">
+    <meta name="author" content="Simon Wixon">
+    <meta name="viewport" id="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script type="text/javascript">
+        $(function () {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                var ww = ($(window).width() < window.screen.width) ? $(window).width() : window.screen.width;
+                var mw = 400;
+                var ratio = ww / mw;
+                if (ww < mw) {
+                    $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + ww);
+                } else {
+                    $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=no, width=' + ww);
+                }
+            } else {
+                $('.pokiMessage').css("display", "none");
+            }
+        });
+    </script>
+</head>
+<body>
+<div id="logo" onclick="location.href='index.php';">
+    <canvas></canvas>
+    <div id="logoCoverContainer">
+        <img id="logoCover" src="images/NewLogo.jpg" alt="Logo Cover">
+    </div>
+</div>
+<div id="container">
+    <div id="menu">
+        <div class="line" style="margin-bottom: 15px"></div>
+        <a id="web" class="menuLink navyText" href="allgames.php?category=Web">WEB GAMES</a>
+         | 
+        <a id="pc" class="menuLink skyText" href="allgames.php?category=PC">PC/MAC GAMES</a>
+         | 
+        <a id="mobile" class="menuLink yellowText" href="allgames.php?category=Mobile">MOBILE GAMES</a>
+         | 
+        <a id="console" class="menuLink orangeText" href="allgames.php?category=Console">CONSOLE GAMES</a>
+        <div class="line" style="margin-top: 15px"></div>
+    </div>
+
+    
+        <div class="flashMessage">
+        You can also play Duck Life through our trusted partner <a href="https://www.coolmathgames.com/0-duck-life">Coolmath
+        Games</a>
+    </div>
+    
+    
+    
+    
+    <div id="gameContainer" style="width: 800px">
+        <div id="game" style="height: 450px">
+                        <iframe scrolling="no" src="webgl.html" width="100%" height="100%"></iframe>
+                    </div>
+        <div id="gameDescriptionContainer" style="background-color: #0F272A">
+            <div id="iconContainer">
+                <img id="icon" src="images/icon.png" alt="DUCK LIFE 1">
+            </div>
+            <div id="gameTextContainer" style="width: 660px">
+                <div id="gameTitle">
+                    DUCK LIFE 1                </div>
+                <div id="gameDescription" style="color: #76A8B0">
+                    Train up a duckling then enter it in races! As you play the training mini games, the duck levels up, making it faster during the races                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="flashMessage pokiMessage">
+        Playing on a mobile device? Play the mobile friendly version at <a href="https://poki.com/en/g/duck-life">Poki</a>
+    </div>
+    
+    <div id="webGames" class="gameSelectContainer" style="order: 1">
+        <div class="gameSelectTitleContainer navyText">
+            <img class="icon" src="images/IconWeb2x.png" alt="Web Games Icon"> WEB GAMES
+        </div>
+        <div id="webWarning"></div>
+
+        <div class="carousel">
+                        <div class="game" onclick="location.href='game.php?id=ducklifeadventuredemo';">
+                <div class="preview" style="background-image: url(images/cover.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #0F272A">
+                    <div class="title">DUCK LIFE 8 ADVENTURE (DEMO)</div>
+                    <div class="description" style="color: #76A8B0">
+                        It's time to head off on an epic adventure in Duck Life's biggest game ever!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=moreorless';">
+                <div class="preview" style="background-image: url(images/cover_2.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/moreorless/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #170051">
+                    <div class="title">MORE OR LESS!</div>
+                    <div class="description" style="color: #9a30ff">
+                        The greatest and most satisfying puzzle game ever made (more or less)                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=antarttycoon';">
+                <div class="preview" style="background-image: url(images/cover_5.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #300501">
+                    <div class="title">ANT ART TYCOON</div>
+                    <div class="description" style="color: #A96C6A">
+                        You are an out of luck art dealer with nothing to your name but 5 highly trained ants                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=wordvsword';">
+                <div class="preview" style="background-image: url(images/cover_1.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/wordvsword/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #310030">
+                    <div class="title">WORD VS WORD</div>
+                    <div class="description" style="color: #c454c8">
+                        Find the best words before your opponent does in this addictive puzzler!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=deathbyspellcheck';">
+                <div class="preview" style="background-image: url(images/cover_4.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #222222">
+                    <div class="title">DEATH BY SPELL CHECK</div>
+                    <div class="description" style="color: #AAAAAA">
+                        Make words out of the bubbles before the time runs out!                     </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=ducklifebattledemo';">
+                <div class="preview" style="background-image: url(images/cover_8.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #300501">
+                    <div class="title">DUCK LIFE 7: BATTLE (DEMO)</div>
+                    <div class="description" style="color: #A96C6A">
+                        The ducks are back, but this time they're angrier. Try out the game for free!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=ducklife3';">
+                <div class="preview" style="background-image: url(images/cover_3.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/ducklife3/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #150631">
+                    <div class="title">DUCK LIFE 3: EVOLUTION</div>
+                    <div class="description" style="color: #8F5EAB">
+                        Evolve your duck to become better at certain skills!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=ducklife1';">
+                <div class="preview" style="background-image: url(images/cover_7.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/ducklife1/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #0F272A">
+                    <div class="title">DUCK LIFE 1</div>
+                    <div class="description" style="color: #76A8B0">
+                        Train up a duckling then enter it in races!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=wheresmypizza';">
+                <div class="preview" style="background-image: url(images/cover_9.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/wheresmypizza/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #1e300b">
+                    <div class="title">WHERE'S MY PIZZA?</div>
+                    <div class="description" style="color: #a0c37c">
+                        Create, cook and deliver pizzas for your hungry customers!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=ducklife2';">
+                <div class="preview" style="background-image: url(images/cover_6.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/ducklife2/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #0F272A">
+                    <div class="title">DUCK LIFE 2: WORLD CHAMPIONSHIP</div>
+                    <div class="description" style="color: #76A8B0">
+                        Become the duck racing champion of the world!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=jumphobiaplayerspack';">
+                <div class="preview" style="background-image: url(images/cover_10.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="games/jumphobiaplayerspack/preview.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #091629">
+                    <div class="title">JUMPHOBIA: PLAYER'S PACK</div>
+                    <div class="description" style="color: #6D85AD">
+                        The ultimate auto-jump puzzle platforming challenge is back with 30 brand new levels made by players like you                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=jumphobia';">
+                <div class="preview" style="background-image: url(images/cover_11.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_6.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #091629">
+                    <div class="title">JUMPHOBIA</div>
+                    <div class="description" style="color: #6D85AD">
+                        There is no jump button, instead you auto jump when you run off a ledge!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=ducklifespace';">
+                <div class="preview" style="background-image: url(images/cover_12.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_5.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #150631">
+                    <div class="title">DUCK LIFE 6: SPACE</div>
+                    <div class="description" style="color: #8F5EAB">
+                        Prepare to go galactic in this  interstellar Duck Life adventure!                    </div>
+                </div>
+            </div>
+                        <div class="game" onclick="location.href='game.php?id=letsroll';">
+                <div class="preview" style="background-image: url(images/cover_13.png);">
+                    <video width="240" height="134" autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/preview_4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text" style="background-color: #132F00">
+                    <div class="title">LET'S ROLL</div>
+                    <div class="description" style="color: #7EB35F">
+                        Roll and jump your way across an obstacle-laden path. Try not to die!                     </div>
+                </div>
+            </div>
+                    </div>
+        <button class="seeAll navyText navyBorder" onclick="location.href='allgames.php?category=Web';">SEE ALL</button>
+    </div>
+
+    <!-- <div class="bannerAd">
+        <script async src="https://ssl.cdne.cpmstar.com/cached/js/lib.js"></script>
+        <script src="BannerAd.js"></script>
+    </div>-->
+
+    <div id="bottomMenu">
+        <div class="line" style="margin: 15px 0px"></div>
+        <a id="copyright" class="menuLink navyText" href="http://games.wixgames.co.uk">© 20xx WIX GAMES</a>
+        <span class="bottomMenuSplit"> | </span>
+        <a class="menuLink skyText" href="https://games.wixgames.co.uk/gamesforyoursite.html">GAME LICENSING</a>
+        <span class="bottomMenuSplit"> | </span>
+        <a class="menuLink yellowText" href="https://discord.gg/MAPEkNB4sC">DISCORD</a>
+        <span class="bottomMenuSplit"> | </span>
+        <a class="menuLink orangeText" href="http://games.wixgames.co.uk/contact.php">CONTACT US</a>
+    </div>
+</div>
+<script src="js/perlin.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var slideCount = $(window).width() > 790 ? 3 : 2;
+        $('.carousel').slick({
+            infinite: false,
+            slidesToScroll: 3,
+            centerMode: false,
+            variableWidth: true
+        });
+        Resize();
+    });
+    $("#copyright").html("© " + (new Date().getFullYear()) + " WIX GAMES")
+    $(window).resize(Resize);
+
+    function Resize() {
+        if ($(window).width() > 790) {
+            $("#web").html("WEB GAMES");
+            $("#pc").html("PC/MAC GAMES");
+            $("#mobile").html("MOBILE GAMES");
+            $("#console").html("CONSOLE GAMES");
+            $("#webWarning").html("");
+            $(".gameSelectContainer").css("width", "790px");
+        } else {
+            $("#web").html("WEB");
+            $("#pc").html("PC/MAC");
+            $("#mobile").html("MOBILE");
+            $("#console").html("CONSOLE");
+            $("#webWarning").html("WARNING: Web games will not work on mobile devices");
+            $(".gameSelectContainer").css("width", $(window).width() + "px");
+        }
+        if ($(window).width() < 500) {
+            $("#menu").css("font-size", "14px").css("letter-spacing", "3px");
+            $(".bottomMenuSplit").html("<br>");
+        } else {
+            $("#menu").css("font-size", "17px").css("letter-spacing", "4px");
+            $(".bottomMenuSplit").html(" | ");
+        }
+    }
+</script>
+
+</body></html>

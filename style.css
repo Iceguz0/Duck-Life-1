@@ -1,0 +1,500 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body,
+html {
+
+    padding: 0;
+    margin: 0;
+}
+
+.paragraphTitle {
+    text-align: center;
+    font-size: 40px;
+    max-width: 790px;
+    margin: 20px auto;
+    letter-spacing: 5px;
+}
+
+.paragraph {
+    max-width: 790px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 400px;
+    max-height: 250px;
+    vertical-align: bottom;
+}
+
+#logoCoverContainer {
+    position: relative;
+    top: -250px;
+    left: 0;
+
+}
+
+.icon {
+    vertical-align: bottom;
+}
+
+#logoCover {
+    width: 100%;
+    max-width: 700px;
+    cursor: pointer;
+
+}
+
+#trailer {
+    max-width: 790px;
+    max-height: 445px;
+    min-height: 225px;
+    margin: auto;
+    background-color: #222;
+}
+
+
+#logo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#platforms {
+    letter-spacing: 5px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#screenshotTitle {
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 40px;
+}
+
+.platform {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2;
+}
+
+#dl9progressContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.platform:hover {
+    color: yellow;
+    border-color: yellow;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#contactFormContainer {
+    margin: auto;
+    width: 400px;
+}
+
+#sliderContainer {
+    width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#sliderText {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    top: -50px;
+    cursor: default;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slider {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: black;
+    -webkit-user-select: none;
+    z-index: 1;
+}
+
+#slider:hover {
+    background-color: #444;
+}
+
+.checkmark {
+    float: left;
+    position: relative;
+    visibility: hidden;
+    top: -42px;
+    left: 375px;
+    color: greenyellow;
+}
+
+.singleLineInput {
+    width: 290px;
+    display: block;
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+
+.multiLineInput {
+    width: 290px;
+    display: block;
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    resize: vertical;
+}
+
+#container {
+    margin: auto;
+    margin-top: -254px;
+    max-width: 970px;
+}
+
+.screenshot {
+    max-width: 790px;
+    height: 445px;
+    background-color: #222;
+    overflow: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#screenshots {
+    margin-top: 20px;
+}
+
+#menu {
+    margin: auto;
+    max-width: 790px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.line {
+    background-color: white;
+    height: 1px;
+}
+
+
+.menuLink {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menuLink:hover {
+    color: white;
+}
+
+.navyText {
+    color: #2968B9;
+}
+
+.skyText {
+    color: #4BADEC;
+}
+
+.yellowText {
+    color: #EAB840;
+}
+
+.orangeText {
+    color: #E58C34;
+}
+
+.redText {
+    color: #B1411E;
+}
+
+.navyBorder {
+    border: 1px solid #2968B9;
+}
+
+.skyBorder {
+    border: 1px solid #4BADEC;
+}
+
+.yellowBorder {
+    border: 1px solid #EAB840;
+}
+
+.orangeBorder {
+    border: 1px solid #E58C34;
+}
+
+.redBorder {
+    border: 1px solid #B1411E;
+}
+
+#gameContainer {
+    margin: 40px auto 0 auto;
+}
+
+#game {
+    background-color: #222;
+}
+
+#gameDescriptionContainer {
+    min-height: 120px;
+    background-color: #333;
+    display: block;
+    overflow: auto;
+}
+
+#gameDescriptionContainer #iconContainer {
+    width: 100px;
+    min-height: 100px;
+    padding: 10px;
+    float: left;
+    display: block;
+}
+
+#gameDescriptionContainer #gameTextContainer {
+
+    min-height: 100px;
+    padding: 10px;
+    float: left;
+    display: block;
+
+}
+
+#gameDescriptionContainer #gameTextContainer #gameTitle {
+    font-size: 35px;
+}
+
+#gameDescriptionContainer #gameTextContainer #gameDescription {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#gameDescriptionContainer #iconContainer #icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.flashMessage {
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.flashMessage a {
+    text-decoration: none;
+    color: #4BADEC;
+}
+
+.flashMessage a:hover {
+    text-decoration: none;
+    color: #2968B9;
+}
+
+#chromeMessage {
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 40px;
+}
+
+#chromeMessage a {
+    text-decoration: none;
+    color: #4BADEC;
+}
+
+#chromeMessage a:hover {
+    text-decoration: none;
+    color: #2968B9;
+}
+
+.bannerAd {
+    background-color: #222;
+    min-height: 60px;
+    width: 100%;
+    max-width: 790px;
+    margin: 10px auto;
+}
+
+.gameSelectContainer {
+
+    height: 350px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+
+}
+
+.gameSelectTitleContainer {
+    height: 25px;
+    text-align: center;
+    margin: 10px auto;
+    letter-spacing: 6px;
+    font-size: 18px;
+}
+
+#webWarning {
+    text-align: center;
+    color: gray;
+    margin: 10px auto;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+#flashWarning {
+    text-align: center;
+    color: gray;
+    margin: 10px auto;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+#content {
+    display: grid;
+}
+
+#bottomMenu {
+    max-width: 790px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+
+}
+
+.game {
+    width: 240px;
+    height: 200px;
+    margin: 17px;
+    cursor: pointer;
+}
+
+.allGamesGame {
+    margin: 11px;
+    float: left;
+}
+
+.game .preview {
+    height: 134px;
+    background-color: #222;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.game:hover video {
+    visibility: visible;
+}
+
+.game video {
+    visibility: hidden;
+}
+
+
+.game .text {
+    height: 55px;
+    padding: 5px 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.game .text .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game .text .description {
+    color: #777;
+    font-size: 12px;
+    overflow: hidden;
+    height: 35px;
+    margin-top: 2px;
+}
+
+.carousel {
+    max-width: 790px;
+    min-height: 200px;
+    margin: auto;
+    text-align: left;
+}
+
+
+.seeAll {
+    width: 240px;
+    height: 40px;
+    margin: auto;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: #000;
+    letter-spacing: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.seeAll:hover {
+    border: 1px solid #FFF;
+    color: white;
+}
+
+iframe {
+    border: none;
+}
